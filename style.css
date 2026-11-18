@@ -1,12 +1,12 @@
 @font-face {
   font-family: "TT Interphases Pro";
-  src: url("assets/for-gpt/tt-interphases-pro-medium.ttf") format("truetype");
+  src: url("assets/for-gpt/tt-interphases-pro-medium-dc6a3a2d252f.woff2") format("woff2");
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("assets/for-gpt/jetbrains-mono.ttf") format("truetype");
+  src: url("assets/for-gpt/jetbrains-mono-b0828b0c4cc0.woff2") format("woff2");
   font-weight: 100 800;
   font-display: swap;
 }
