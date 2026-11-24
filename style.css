@@ -122,7 +122,7 @@ a:focus-visible { outline: 2px solid #27dbef; outline-offset: 5px; }
 }
 .case-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--gutter);
   width: 100%;
   padding: 0 var(--gutter) var(--gutter);
@@ -130,7 +130,7 @@ a:focus-visible { outline: 2px solid #27dbef; outline-offset: 5px; }
 .case-card {
   position: relative;
   display: block;
-  aspect-ratio: 613.333333 / 688;
+  aspect-ratio: 930 / 596;
   min-width: 0;
   overflow: hidden;
   border-radius: calc(24 * var(--unit));
@@ -141,10 +141,10 @@ a:focus-visible { outline: 2px solid #27dbef; outline-offset: 5px; }
   position: absolute;
   left: 5%;
   right: 5%;
-  top: calc(38 / 613.333333 * 100cqw);
-  font-size: calc(31.236 / 613.333333 * 100cqw);
-  line-height: calc(36.236 / 613.333333 * 100cqw);
-  letter-spacing: calc(-.2091 / 613.333333 * 100cqw);
+  top: calc(40 / 930 * 100cqw);
+  font-size: max(16px, calc(31.236 / 930 * 100cqw));
+  line-height: max(19px, calc(36.236 / 930 * 100cqw));
+  letter-spacing: calc(-.2091 / 930 * 100cqw);
   text-align: center;
 }
 @media (hover: hover) and (pointer: fine) {
@@ -269,3 +269,10 @@ a:focus-visible { outline: 2px solid #27dbef; outline-offset: 5px; }
 
 .story { display: flex; flex-direction: column; gap: calc(16 * var(--unit)); }
 .story > .section-title { margin-bottom: 0; }
+
+/* New case illustrations share the same scene layout and mobile typography. */
+.timesheet-page .case-title { white-space: normal; }
+.timesheet-gallery { margin-top: calc(32 * var(--unit)); }
+@media (max-width: 700px) {
+  .card-title { top: 16px; font-size: 16px; line-height: 19px; }
+}
